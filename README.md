@@ -207,9 +207,7 @@ AdmobService(this).setOnListener { status, adType, type, amount ->
 ```
 
 2. Final Demo
-
-
-
+[![IMAGE ALT TEXT HERE](https://i3.ytimg.com/vi/dYUMxWogWQw/maxresdefault.jpg)](https://www.youtube.com/watch?v=dYUMxWogWQw)
 
 
 <!-- LICENSE -->
