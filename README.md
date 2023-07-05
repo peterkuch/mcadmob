@@ -91,7 +91,7 @@ Create your own Anroid Application
                 android:value="ca-app-pub-3929444994565000~6715874000" />
        </application>
    ```
-4. Download <a href="https://github.com/peterkuch/mcadmob/blob/master/libs/McAdmobLibrary_1_0.aar">McAdmobLibrary_1_0.aar</a> 
+4. Download <a href="https://github.com/peterkuch/mcadmob/blob/master/libs/McAdmobLibrary_1_0.aar">My McAdmobLibrary_1_0.aar</a> 
   
 5. Import McAdmobLibrary_1_0.aar to your project root/libs/
 <img src="https://github.com/peterkuch/mcadmob/blob/master/screenshot/lib.png" width="1000"/>
