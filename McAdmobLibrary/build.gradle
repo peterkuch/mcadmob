@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
 }
+group = 'com.morecambodia.mcadmoblibrary'
+version = '1.0'
 
 android {
     namespace 'com.morecambodia.mcadmoblibrary'
@@ -29,7 +31,19 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-}
+
+//        maven(MavenPublication) {
+//            groupId = 'com.morecambodia'
+//            artifactId = 'mcadmoblibrary'
+//            version = "1.0-SNAPSHOT"
+//            from components.java
+//
+//            pom {
+//                description = 'A description of my library'
+//            }
+//        }
+    }
+
 
 dependencies {
     implementation 'com.google.android.gms:play-services-ads:22.1.0'
@@ -40,4 +54,17 @@ dependencies {
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.morecambodia.mcadmoblibrary'
+                artifactId = 'mcadmoblibrary'
+                version = '1.0'
+            }
+        }
+    }
 }
