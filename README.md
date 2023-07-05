@@ -205,8 +205,82 @@ AdmobService(this).setOnListener { status, adType, type, amount ->
             }
         }.onStartReward(your own adUnitRewarded)
 ```
+3. Final code
+```
+   class MainActivity : AppCompatActivity() {
+    private var tag = "Admob Log"
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        findViewById<Button>(R.id.banner).setOnClickListener {
+            loadBanner()
+        }
+        findViewById<Button>(R.id.intershow).setOnClickListener {
+            loadInterstitialAd()
+        }
+        findViewById<Button>(R.id.reward).setOnClickListener {
+            loadRewardedAd()
+        }
+    }
+    /**
+     * Load Admob banner
+     */
+    private fun loadBanner(){
+        AdmobService(this).setOnListener { status, adType, type, amount ->
+            if (adType == AdmobService.AdType.AdView) {
+                when (status) {
+                    AdmobService.AdStatus.LOADED -> {
+                        Log.i(tag, "AdView")
+                    }
 
-2. Final Demo
+                    else -> {}
+                }
+            }
+        }.onStartAdBanner(viewBanner = findViewById(R.id.adBanner))
+    }
+    /**
+     * Load Admob InterstitialAd
+     */
+    private fun loadInterstitialAd(){
+        AdmobService(this).setOnListener { status, adType, type, amount->
+            if (adType == AdmobService.AdType.InterstitialAd) {
+                when (status) {
+                    AdmobService.AdStatus.LOADED -> {
+                        Log.i(tag, "InterstitialAd")
+                    }
+
+                    else -> {
+
+                    }
+                }
+            } else {
+
+            }
+        }.onStartAdInterstitial()
+    }
+    /**
+     * Load Admob RewardedAd
+     */
+    private fun loadRewardedAd(){
+        AdmobService(this).setOnListener { status, adType, type, amount ->
+            if (adType == AdmobService.AdType.RewardedAd) {
+                when (status) {
+                    AdmobService.AdStatus.REWARDED -> {
+                        Log.i(tag, "REWARDED")
+                    }
+
+                    else -> {
+
+                    }
+
+                }
+            } else {
+            }
+        }.onStartReward()
+    }
+}
+```
+6. Final Demo
 [![IMAGE ALT TEXT HERE](https://i3.ytimg.com/vi/dYUMxWogWQw/maxresdefault.jpg)](https://www.youtube.com/watch?v=dYUMxWogWQw)
 
 
