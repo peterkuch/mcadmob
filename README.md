@@ -215,10 +215,6 @@ AdmobService(this).setOnListener { status, adType, type, amount ->
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
@@ -226,12 +222,6 @@ Kuch Darith - [@kuchdarith][https://www.youtube.com/@kuchdarith] - kuchdarith@gm
 
 Project Link: [https://github.com/peterkuch/mcadmob][https://github.com/peterkuch/mcadmob]
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
