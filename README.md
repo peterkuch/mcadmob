@@ -97,11 +97,22 @@ Create your own Anroid Application
 <img src="https://github.com/peterkuch/mcadmob/blob/master/screenshot/lib.png" width="1000"/>
 
 7. Sync McAdmobLibrary_1_0.aar to your project
+<img src="https://github.com/peterkuch/mcadmob/blob/master/screenshot/lib1.png" width="1000"/>
+<img src="https://github.com/peterkuch/mcadmob/blob/master/screenshot/lib2.png" width="1000"/>
+<img src="https://github.com/peterkuch/mcadmob/blob/master/screenshot/lib3.png" width="1000"/>
+
+8. Start implement your project
+
+Create your own Anroid Application
+1. Create if you want to implement banner admob before you use our lib , please create AdBanner contaner  where you want to show in your project first, we required view from your app to show Banner Admob.
 
 
 
 
-8. 
+
+
+
+2. 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
