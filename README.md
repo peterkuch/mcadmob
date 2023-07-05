@@ -93,9 +93,12 @@ Create your own Anroid Application
    ```
 4. Download <a href="https://github.com/peterkuch/mcadmob/blob/master/libs/McAdmobLibrary_1_0.aar">McAdmobLibrary_1_0.aar</a> 
   
-5. Import McAdmobLibrary_1_0.aar to your project
+5. Import McAdmobLibrary_1_0.aar to your project root/libs/
+
+
+
    
-7. 
+7. Import McAdmobLibrary_1_0.aar to your project
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
